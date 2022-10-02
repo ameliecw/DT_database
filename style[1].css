@@ -1,0 +1,209 @@
+header,
+nav,
+article,
+footer {
+	display: block;
+	/**makes all elements be a block**/
+}
+
+html {
+	text-align: left;
+	width: 90vw;
+	margin: 0 auto 0 auto;
+	font-size: 1em;
+	font-family: 'Epilogue', sans-serif;
+}
+
+select {
+	font-size: 1em;
+}
+
+header {
+	padding: 2vw;  
+	box-sizing: border-box;
+	text-align: center;
+	background-size: cover;
+	overflow: auto;
+	background: #fff;
+}
+
+header h1 {
+	color: #000;
+	/**font-size: 2em;**/
+	font-family: 'Epilogue', sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-family: 'Epilogue', sans-serif;
+	font-size: 1.25em;
+}
+
+body {
+	background-size: 700vw;
+	margin: 0;
+	float: center;
+	background-color: #fff;
+	padding: 10px;
+}
+
+ul {
+ 	list-style-type: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow: hidden;
+ 	background-color: #0b5484;
+	font-size: 1em; 
+}
+
+li {
+ 	float: left;
+	font-size: 1em;
+}
+
+li a {
+ 	display: block;
+ 	color: white;
+ 	text-align: center;
+ 	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the link color to #072f4a (dark blue) on hover */
+li a:hover {
+	background-color: #072f4a;
+}
+
+p {
+	font-size: 1em;
+}
+
+.button{
+	padding: 2px;
+	font-size: 1em;
+	
+}
+
+.item3 a:hover{
+	color: red;
+}
+
+footer {
+	background-color: #0b5484;
+	padding: 8px;
+    text-align: center;
+	height: auto;
+}
+footer p {
+	color: #fff;
+	font-size: 1em;
+}
+
+.button {
+	font-size: 1em;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 15px;
+	padding: 10px;
+	/* Sets up the display of the grid*/
+  	grid-template-areas:
+	'header header header header header header'
+	'menu menu menu menu menu menu'
+	'intro intro intro intro intro intro'
+	'main main main main sidebar sidebar'
+	'footer footer footer footer footer footer';
+}
+
+.item1 { 
+	grid-column: header; 
+	padding: 10px;
+	/**makes top to bottom gradient**/
+	background-image: linear-gradient(#fbf788, #0b5484); 
+}
+
+
+.item1 img{ 
+	max-width: 15%;
+	min-width: 100px;
+	height: auto;
+	
+}
+
+.item2 { 
+	grid-column: menu; 
+	position: -webkit-sticky;
+ 	position: sticky;
+	transition: 0.4s;
+ 	top: 0;
+}
+
+.item3 {
+	background: #b9bfc9;
+	grid-area: intro;
+	justify-self: center;
+	padding: 20px;
+}
+
+.item4 {
+	grid-area: main;
+	background: #dbdbdb;
+	padding: 20px;
+}
+
+.item5 {
+	grid-area: sidebar;
+	background: #dbdbdb;
+	padding: 20px;
+}
+
+.item5 img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 10px;
+	max-width: 55%;
+	min-width: 150px;
+	height: auto;
+}
+
+.item6 { 
+	grid-area: footer; 
+}
+
+.item6 a {
+	color: #fff;
+}
+
+.item6 a:hover{
+	color: red;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(2, [col] 49%);
+	grid-template-rows: repeat(1, [row] auto );
+	background-color: #fff;
+	padding: 13px;
+}
+
+.box1 {
+	background: #fff;
+}
+
+.box-item1 {
+	grid-column: 2 / 1;
+	grid-row: 1;
+	background: #fff;
+	padding: 8px;
+}
+
+.grid-container > div {
+	text-align: left;
+	
+}
