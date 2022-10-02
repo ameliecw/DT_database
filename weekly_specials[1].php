@@ -83,7 +83,7 @@ $all_items_results = mysqli_query($dbcon,$query_all_items);*/
 		
 		<div class="item5">
 			<!-- Dropdown food form -->
-			<h2>Select Another Food</h2>
+			<h2>Select Another Special</h2>
 			<form name='special_form' id='special_form' method='get' action='weekly_specials.php'>
 				<!-- Dropdown menu -->
 				<select id='special_sel' name='special_sel'>
@@ -97,7 +97,7 @@ $all_items_results = mysqli_query($dbcon,$query_all_items);*/
 					?>
 				</select>
 
-				<input type='submit' name='food_button' value='See the food information'>
+				<input type='submit' name='fspecial_button' value='See the weekly special'>
 			</form>	
 		</div>
 
